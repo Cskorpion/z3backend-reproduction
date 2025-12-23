@@ -91,7 +91,7 @@
 - Profiles created using the profiling_tests/test_z3riscvprofile.py test
 -  configure Profile file in test_z3riscvprofile.py
 -  place in pydrofoil/riscv/test and run:
--  ./pypy_binary/bin/pypy pypy2/pytest.py -vv -s --pdb riscv/test/test_z3riscvprofile.py 
+    - `./pypy_binary/bin/pypy pypy2/pytest.py -vv -s --pdb riscv/test/test_z3riscvprofile.py`
 - Convert profiles using the vmprof-firefox-converter
     -  `python -m vmprofconvert -convert path/to/your/profile.prof`
 
@@ -103,7 +103,7 @@
 - run run_bench_thesis.py:
     - `PYDROFOILHYPOTHESIS run_bench_thesis.py`
 
-## angr
+## z3backend
 - place benchmark_z3backend/test_z3riscvbenchmark.py and benchmark_opcodes_names.txt in pydrofoil/riscv/test/ folder
 - run test_z3riscvbenchmark:
     - `./pypy_binary/bin/pypy pypy2/pytest.py -vv -s --pdb riscv/test/test_z3riscvbenchmark.py`
